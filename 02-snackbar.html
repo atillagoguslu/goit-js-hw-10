@@ -5,11 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-10/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/page-2.js"></script>
+    <script type="module" crossorigin src="/goit-js-hw-10/02-snackbar.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/styles-DoS41Y8e.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbSUbo7J.js">
     <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-Cz74iz4N.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-C1gPI-5C.css">
   </head>
   <body>
     <header class="header">
@@ -22,7 +22,9 @@
       </a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Görev 2</a>
+          <a class="nav-link {=$highlight-act}" href="./02-snackbar.html"
+            >Görev 2</a
+          >
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
@@ -34,31 +36,33 @@
 
     <main>
       <section class="snackbar-section">
-  <form class="form">
-    <label>
-      Delay (ms)
-      <input type="number" name="delay" value="1500" required />
-    </label>
+        <form class="form">
+          <label>
+            Delay (ms)
+            <input type="number" name="delay" value="1500" required />
+          </label>
 
-    <fieldset>
-      <legend>State</legend>
-      <label>
-        <input type="radio" name="state" value="fulfilled" checked required />
-        Fulfilled
-      </label>
-      <label>
-        <input type="radio" name="state" value="rejected" required />
-        Rejected
-      </label>
-    </fieldset>
+          <fieldset>
+            <legend>State</legend>
+            <label>
+              <input
+                type="radio"
+                name="state"
+                value="fulfilled"
+                checked
+                required
+              />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
 
-    <button type="submit">Create notification</button>
-  </form>
-
-</section>
-
-
-
+          <button type="submit">Create notification</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
   <div class="container">
