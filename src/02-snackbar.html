@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+    <main>
+      <section class="snackbar-section">
+        <form class="form">
+          <label>
+            Delay (ms)
+            <input type="number" name="delay" value="1500" required />
+          </label>
+
+          <fieldset>
+            <legend>State</legend>
+            <label>
+              <input
+                type="radio"
+                name="state"
+                value="fulfilled"
+                checked
+                required
+              />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button type="submit">Create notification</button>
+        </form>
+      </section>
+    </main>
+    <load src="./partials/footer.html" />
+    <script type="module" src="./js/02-snackbar.js"></script>
+  </body>
+</html>
